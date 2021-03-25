@@ -1,0 +1,9 @@
+linux
+instalación-de-r
+instalación-de-rstudio-versión-desktop-free
+windows
+instalación-de-r-1
+instalación-de-rstudio-desktop-free
+mac-os-x
+instalación-de-r-2
+instalación-de-rstudio
