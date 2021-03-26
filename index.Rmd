@@ -8,7 +8,6 @@ author: "Eva María Mazcuñán Navarro"
 github-repo: "EMazcunan/install-r-rstudio"
 date: ""
 description: "Instalación de R y RStudio"
-abstract: "Instrucciones para instalar R y RStudio"
 site: bookdown::bookdown_site
 documentclass: article
 bibliography: [book.bib, packages.bib]
@@ -37,7 +36,7 @@ knitr::write_bib(c(
 
 <!-- # `r params$set_title`  {-} -->
 
-# X {.unlisted .unnumbered}
+#  {.unlisted .unnumbered}
  
 Utilizaremos el lenguaje **R**, vía la IDE **RStudio**, para resolver las tareas que se plantearán en la asignatura.
 

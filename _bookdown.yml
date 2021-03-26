@@ -20,7 +20,6 @@ language:
         remark: 'Nota. '
         solution: 'Solución. '
 ui:
-    edit: "Editar"
-    download: Descargar
+    edit: Edit
     chapter_name: ''
     appendix_name: 'Apéndice'    
