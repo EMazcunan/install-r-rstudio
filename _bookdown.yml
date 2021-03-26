@@ -1,6 +1,26 @@
 book_filename: "install-R-RStudio"
+rmd_files: ["index.Rmd", "linux.Rmd", "windows.Rmd", "mac.Rmd"]
 output_dir: docs
 delete_merged_file: true
 language:
-  ui:
-    chapter_name: ""
+    label: 
+        fig: 'Figura '
+        tab: 'Tabla '
+        eq: 'Ecuación '
+        thm: 'Teorema '
+        lem: 'Lema '
+        cor: 'Corolario '
+        prp: 'Proposición '
+        cnj: 'Conjetura '
+        def: 'Definición '
+        exm: 'Ejemplo '
+        exr: 'Ejercicio '
+        hyp: 'Hypótesis '
+        proof: 'Prrueba. '
+        remark: 'Nota. '
+        solution: 'Solución. '
+ui:
+    edit: "Editar"
+    download: Descargar
+    chapter_name: ''
+    appendix_name: 'Apéndice'    

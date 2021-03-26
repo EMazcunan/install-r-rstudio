@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="es" xml:lang="es">
 <head>
 
   <meta charset="utf-8" />
@@ -12,13 +12,13 @@
   <meta property="og:type" content="book" />
   
   
-  
-  
+  <meta property="og:description" content="1 Linux | Instalación de R y RStudio" />
+  <meta name="github-repo" content="EMazcunan/install-r-rstudio" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="1 Linux | Instalación de R y RStudio" />
   
-  
+  <meta name="twitter:description" content="1 Linux | Instalación de R y RStudio" />
   
 
 <meta name="author" content="Eva María Mazcuñán Navarro" />
@@ -32,6 +32,16 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="windows.html"/>
+<style type="text/css">
+p.abstract{
+  text-align: center;
+  font-weight: bold;
+}
+div.abstract{
+  margin: auto;
+  width: 90%;
+}
+</style>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -65,10 +75,10 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./index.html">Instalación de R y RStudio</a></li>
+<li><a href="./">Instalación de R y RStudio</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>X</a></li>
 <li class="chapter" data-level="1" data-path="linux.html"><a href="linux.html"><i class="fa fa-check"></i><b>1</b> Linux</a><ul>
 <li class="chapter" data-level="1.1" data-path="linux.html"><a href="linux.html#instalación-de-r"><i class="fa fa-check"></i><b>1.1</b> Instalación de R</a></li>
 <li class="chapter" data-level="1.2" data-path="linux.html"><a href="linux.html#instalación-de-rstudio"><i class="fa fa-check"></i><b>1.2</b> Instalación de RStudio</a></li>
@@ -77,11 +87,12 @@
 <li class="chapter" data-level="2.1" data-path="windows.html"><a href="windows.html#instalación-de-r-1"><i class="fa fa-check"></i><b>2.1</b> Instalación de R</a></li>
 <li class="chapter" data-level="2.2" data-path="windows.html"><a href="windows.html#instalación-de-rstudio-1"><i class="fa fa-check"></i><b>2.2</b> Instalación de RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="mac-os-x.html"><a href="mac-os-x.html"><i class="fa fa-check"></i><b>3</b> Mac OS X</a><ul>
-<li class="chapter" data-level="3.1" data-path="mac-os-x.html"><a href="mac-os-x.html#instalación-de-r-2"><i class="fa fa-check"></i><b>3.1</b> Instalación de R</a></li>
-<li class="chapter" data-level="3.2" data-path="mac-os-x.html"><a href="mac-os-x.html#instalación-de-rstudio-2"><i class="fa fa-check"></i><b>3.2</b> Instalación de RStudio</a></li>
+<li class="chapter" data-level="3" data-path="mac.html"><a href="mac.html"><i class="fa fa-check"></i><b>3</b> Mac OS X</a><ul>
+<li class="chapter" data-level="3.1" data-path="mac.html"><a href="mac.html#instalación-de-r-2"><i class="fa fa-check"></i><b>3.1</b> Instalación de R</a></li>
+<li class="chapter" data-level="3.2" data-path="mac.html"><a href="mac.html#instalación-de-rstudio-2"><i class="fa fa-check"></i><b>3.2</b> Instalación de RStudio</a></li>
 </ul></li>
 <li class="divider"></li>
+<li><a href="https://github.com/EMazcunan/install-r-rstudio" target="blank">Código en GitHub</a></li>
 <li><a href="https://pages.github.com/" target="blank">Publicado con GitHub Pages</a></li>
 
 </ul>
@@ -101,6 +112,7 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
+BB
 <div id="linux" class="section level1">
 <h1><span class="header-section-number">1</span> Linux</h1>
 <p><img src="images/os/tux-flat.png" width="15%" style="display: block; margin: auto;" /></p>
@@ -109,7 +121,7 @@
 <p>En este apartado se describen las instrucciones para instalar R en Ubuntu. Para otras distribuciones de Linux consulta <a href="https://ftp.cixug.es/CRAN/bin/linux/" target="_blank">este link</a>.</p>
 <p><img src="images/os/ubuntu.png" width="15%" style="display: block; margin: auto;" /></p>
 <p>Para instalar R en Ubuntu instala los paquetes <code>r-base</code> y <code>r-base-dev</code>, ejecutando desde la terminal</p>
-<pre><code>sudo apt-get update
+<pre><code>sudo apt update
 sudo apt install r-base r-base-dev </code></pre>
 <p>También puedes hacer la instalación desde <strong>Ubuntu Software</strong>.</p>
 </div>
@@ -124,6 +136,7 @@ Cuando se complete la descarga del paso anterior, haz doble click en el archivo 
 
 </div>
 </div>
+AB
             </section>
 
           </div>
@@ -145,34 +158,25 @@ Cuando se complete la descarga del paso anterior, haz doble click en el archivo 
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": true,
-"facebook": false,
-"twitter": false,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
+"sharing": false,
 "fontsettings": {
 "theme": "white",
 "family": "sans",
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/EMazcunan/install-r-rstudio/edit/master/linux.Rmd",
+"text": "Sugerir un cambio"
 },
 "history": {
 "link": null,
 "text": null
 },
 "view": {
-"link": null,
+"link": "https://github.com/EMazcunan/install-r-rstudio/blob/master/linux.Rmd",
 "text": null
 },
-"download": {},
+"download": ["install-R-RStudio.pdf", "https://github.com/EMazcunan/install-r-rstudio/raw/master/linux.Rmd"],
 "toc": {
 "collapse": "subsection"
 }

@@ -1,4 +1,4 @@
-# Windows
+# Windows {#windows}
 
 ```{r, out.width="15%"}
 knitr::include_graphics("images/os/windows.png")

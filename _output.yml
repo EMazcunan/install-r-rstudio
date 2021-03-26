@@ -1,20 +1,27 @@
 bookdown::gitbook:
+  split_by: chapter
   css: style.css
+  includes:
+    before_body: before_body.Rmd
+    after_body: after_body.Rmd 
   config:
     toc:
-      before: |
-        <li><a href="./index.html">Instalación de R y RStudio</a></li>
+      before: | 
+        <li><a href="./">Instalación de R y RStudio</a></li>
       after: |
+        <li><a href="https://github.com/EMazcunan/install-r-rstudio" target="blank">Código en GitHub</a></li>
         <li><a href="https://pages.github.com/" target="blank">Publicado con GitHub Pages</a></li>
-    download: []
-    sharing:
-        facebook: false
-        twitter: false
-        github: true
+    view: "https://github.com/EMazcunan/install-r-rstudio/blob/master/%s"
+    edit: 
+      link: "https://github.com/EMazcunan/install-r-rstudio/edit/master/%s"
+      text: "Sugerir un cambio"
+    download: ["pdf", "rmd"]
+    sharing: no
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
-  latex_engine: xelatex
+    before_body: before_body.tex
+    after_body: after_body.tex
+  latex_engine: pdflatex
   citation_package: natbib
   keep_tex: yes
-bookdown::epub_book: default

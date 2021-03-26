@@ -1,16 +1,20 @@
 --- 
-title: "Instalación de R y RStudio"
+params: 
+    set_title: "Instalación de R y RStudio"
+lang: es
+title: "`r params$set_title`"
 subtitle: "Métodos Numéricos y Estadísticos"
 author: "Eva María Mazcuñán Navarro"
+github-repo: "EMazcunan/install-r-rstudio"
 date: ""
+description: "Instalación de R y RStudio"
+abstract: "Instrucciones para instalar R y RStudio"
 site: bookdown::bookdown_site
-documentclass: book
+documentclass: article
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 ---
-
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -31,11 +35,13 @@ knitr::write_bib(c(
 
 
 
-#  {-}
+<!-- # `r params$set_title`  {-} -->
 
+# X {.unlisted .unnumbered}
+ 
 Utilizaremos el lenguaje **R**, vía la IDE **RStudio**, para resolver las tareas que se plantearán en la asignatura.
 
-En este libro encontrarás las instrucciones para instalar R y RStudio en tu equipo.
+En este documento encontrarás las instrucciones para instalar R y RStudio en tu equipo.
 
 Utiliza la tabla de contenidos del panel izquierdo para elegir el sistema operativo donde quieres realizar la instalación, y sigue los pasos que se describen allí.
 

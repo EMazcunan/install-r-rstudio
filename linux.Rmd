@@ -1,4 +1,4 @@
-# Linux
+# Linux {#linux}
 
 ```{r, out.width="15%"}
 knitr::include_graphics("images/os/tux-flat.png")
@@ -15,7 +15,7 @@ knitr::include_graphics("images/os/ubuntu.png")
 
 Para instalar R en Ubuntu instala los paquetes `r-base`  y  `r-base-dev`, ejecutando desde la terminal
 
-    sudo apt-get update
+    sudo apt update
     sudo apt install r-base r-base-dev 
 
 También puedes hacer la instalación desde **Ubuntu Software**.
