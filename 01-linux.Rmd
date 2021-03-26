@@ -22,7 +22,7 @@ También puedes hacer la instalación desde **Ubuntu Software**.
 
  
 
-## Instalación de RStudio (versión Desktop Free)
+## Instalación de RStudio
 Una vez instalado R, sigue los siguientes pasos para instalar RStudio.
 
 **PASO 1: **
