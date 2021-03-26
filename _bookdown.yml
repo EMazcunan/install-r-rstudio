@@ -1,4 +1,5 @@
 book_filename: "install-R-RStudio"
+output_dir: docs
 delete_merged_file: true
 language:
   ui:
