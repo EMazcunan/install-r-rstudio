@@ -1,0 +1,5 @@
+book_filename: "install-R-RStudio"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: ""
