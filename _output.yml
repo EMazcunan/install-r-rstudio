@@ -2,23 +2,35 @@ bookdown::gitbook:
   split_by: chapter
   css: style.css
   includes:
-    before_body: before_body.Rmd
-    after_body: after_body.Rmd 
+    #in_header: includes/gitbook/gitbook-plugin-bookdown.html
+    #before_body: includes/gitbook/gitbook-plugin-bookdown.html
+    #after_body: includes/gitbook/gitbook-plugin-bookdown.html
+    #before_chapter: includes/gitbook/plugin-bookdown.html
+    #after_chapter: includes/gitbook/gitbook-plugin-bookdown.html
   config:
     toc:
+      #before: !expr paste0('| 
+      #  <li><a href="./">', rmarkdown::metadata$title, '</a></li>')
       before: | 
-        <li><a href="./">Instalación de R y RStudio</a></li>
+        <li><a href="./"> Instalación de R y RStudio </a></li>
       after: |
-        <li><a href="https://github.com/EMazcunan/install-r-rstudio" target="blank">Código en GitHub</a></li>
         <li><a href="https://pages.github.com/" target="blank">Publicado con GitHub Pages</a></li>
-    view: "https://github.com/EMazcunan/install-r-rstudio/blob/master/%s"
-    download: ["pdf"]
-    sharing: no
+    #  view: 
+    #   link: "https://github.com/EMazcunan/install-r-rstudio/blob/master/%s"
+    #   text: "Ver código"
+    download: "pdf"
+    #download: 
+      # - ["pdf", "PDF"]
+    sharing: 
+      twitter: no
+      facebook: no
+      github: yes
+      all: []
 bookdown::pdf_book:
   includes:
-    in_header: preamble.tex
-    before_body: before_body.tex
-    after_body: after_body.tex
+    in_header: includes/pdf_book/preamble.tex
+    #before_body: includes/pdf_book/before_body.tex
+    #after_body: includes/pdf_book/after_body.tex
   latex_engine: pdflatex
   citation_package: natbib
   keep_tex: yes

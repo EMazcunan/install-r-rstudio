@@ -1,7 +1,6 @@
-book_filename: "install-R-RStudio"
 rmd_files: ["index.Rmd", "linux.Rmd", "windows.Rmd", "mac.Rmd"]
 output_dir: docs
-delete_merged_file: true
+#delete_merged_file: true
 language:
     label: 
         fig: 'Figura '
@@ -20,6 +19,5 @@ language:
         remark: 'Nota. '
         solution: 'Solución. '
 ui:
-    edit: Edit
     chapter_name: ''
     appendix_name: 'Apéndice'    

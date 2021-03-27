@@ -32,6 +32,7 @@
   
 
 <link rel="next" href="linux.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -65,24 +66,25 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Instalación de R y RStudio</a></li>
+<li><a href="./"> Instalación de R y RStudio </a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#section"></a></li>
-<li class="chapter" data-level="1" data-path="linux.html"><a href="linux.html"><i class="fa fa-check"></i><b>1</b> Linux</a><ul>
+<li class="chapter" data-level="1" data-path="linux.html"><a href="linux.html"><i class="fa fa-check"></i><b>1</b> Linux</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="linux.html"><a href="linux.html#instalación-de-r"><i class="fa fa-check"></i><b>1.1</b> Instalación de R</a></li>
 <li class="chapter" data-level="1.2" data-path="linux.html"><a href="linux.html#instalación-de-rstudio"><i class="fa fa-check"></i><b>1.2</b> Instalación de RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="windows.html"><a href="windows.html"><i class="fa fa-check"></i><b>2</b> Windows</a><ul>
+<li class="chapter" data-level="2" data-path="windows.html"><a href="windows.html"><i class="fa fa-check"></i><b>2</b> Windows</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="windows.html"><a href="windows.html#instalación-de-r-1"><i class="fa fa-check"></i><b>2.1</b> Instalación de R</a></li>
 <li class="chapter" data-level="2.2" data-path="windows.html"><a href="windows.html#instalación-de-rstudio-1"><i class="fa fa-check"></i><b>2.2</b> Instalación de RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="mac.html"><a href="mac.html"><i class="fa fa-check"></i><b>3</b> Mac OS X</a><ul>
+<li class="chapter" data-level="3" data-path="mac.html"><a href="mac.html"><i class="fa fa-check"></i><b>3</b> Mac OS X</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="mac.html"><a href="mac.html#instalación-de-r-2"><i class="fa fa-check"></i><b>3.1</b> Instalación de R</a></li>
 <li class="chapter" data-level="3.2" data-path="mac.html"><a href="mac.html#instalación-de-rstudio-2"><i class="fa fa-check"></i><b>3.2</b> Instalación de RStudio</a></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://github.com/EMazcunan/install-r-rstudio" target="blank">Código en GitHub</a></li>
 <li><a href="https://pages.github.com/" target="blank">Publicado con GitHub Pages</a></li>
 
 </ul>
@@ -108,7 +110,17 @@
 <p class="author"><em>Eva María Mazcuñán Navarro</em></p>
 </div>
 <div id="section" class="section level1 unlisted unnumbered">
-<h1></h1>
+<h1 class="unlisted unnumbered"></h1>
+<!-- ```{r htmlTemp3, echo=FALSE, eval=TRUE} -->
+<!-- codejs <- readr::read_lines("js/plugin-bookdown.js") -->
+<!-- htmlhead <-  -->
+<!--   paste( -->
+<!-- '<script>', -->
+<!-- paste(codejs, collapse = "\n"), -->
+<!-- '</script> -->
+<!-- ', sep = "\n") -->
+<!-- readr::write_lines(htmlhead, path = "in-header.html") -->
+<!-- ```  -->
 <p>Utilizaremos el lenguaje <strong>R</strong>, vía la IDE <strong>RStudio</strong>, para resolver las tareas que se plantearán en la asignatura.</p>
 <p>En este documento encontrarás las instrucciones para instalar R y RStudio en tu equipo.</p>
 <p>Utiliza la tabla de contenidos del panel izquierdo para elegir el sistema operativo donde quieres realizar la instalación, y sigue los pasos que se describen allí.</p>
@@ -135,7 +147,16 @@
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": false,
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": {}
+},
 "fontsettings": {
 "theme": "white",
 "family": "sans",
@@ -150,10 +171,10 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/EMazcunan/install-r-rstudio/blob/master/index.Rmd",
+"link": null,
 "text": null
 },
-"download": ["install-R-RStudio.pdf"],
+"download": ["_main.pdf"],
 "toc": {
 "collapse": "subsection"
 }

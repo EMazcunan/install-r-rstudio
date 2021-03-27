@@ -22,8 +22,8 @@ knitr::opts_chunk$set(
     fig.align = "center",
     out.width="100%"
 )
+rmarkdown::find_pandoc()
 ```
-
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
@@ -31,13 +31,28 @@ knitr::write_bib(c(
 ), 'packages.bib')
 ```
 
-
-
-
 <!-- # `r params$set_title`  {-} -->
 
 #  {.unlisted .unnumbered}
- 
+
+
+
+
+
+
+<!-- ```{r htmlTemp3, echo=FALSE, eval=TRUE} -->
+<!-- codejs <- readr::read_lines("js/plugin-bookdown.js") -->
+
+<!-- htmlhead <-  -->
+<!--   paste( -->
+<!-- '<script>', -->
+<!-- paste(codejs, collapse = "\n"), -->
+<!-- '</script> -->
+<!-- ', sep = "\n") -->
+
+<!-- readr::write_lines(htmlhead, path = "in-header.html") -->
+<!-- ```  -->
+
 Utilizaremos el lenguaje **R**, vía la IDE **RStudio**, para resolver las tareas que se plantearán en la asignatura.
 
 En este documento encontrarás las instrucciones para instalar R y RStudio en tu equipo.
