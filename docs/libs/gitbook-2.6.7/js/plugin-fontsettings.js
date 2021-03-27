@@ -101,7 +101,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
         // Create buttons in toolbar
         gitbook.toolbar.createButton({
             icon: 'fa fa-font',
-            label: 'Ajustar fuentes',
+            label: 'Font Settings',
             className: 'font-settings',
             dropdown: [
                 [

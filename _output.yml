@@ -18,9 +18,9 @@ bookdown::gitbook:
     #  view: 
     #   link: "https://github.com/EMazcunan/install-r-rstudio/blob/master/%s"
     #   text: "Ver código"
-    download: "pdf"
+    download: ["pdf"]
     #download: 
-      # - ["pdf", "PDF"]
+    #  - ["install-R-RStudio.pdf", "PDF"]
     sharing: 
       twitter: no
       facebook: no

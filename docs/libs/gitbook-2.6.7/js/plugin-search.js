@@ -209,7 +209,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
         // Create the toggle search button
         gitbook.toolbar.createButton({
             icon: 'fa fa-search',
-            label: 'Buscar',
+            label: 'Search',
             position: 'left',
             onClick: toggleSearch
         });

@@ -63,7 +63,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
     } else {
       gitbook.toolbar.createButton({
         icon: 'fa fa-download',
-        label: 'Descargar',
+        label: 'Download',
         position: 'left',
         dropdown: $.map(down, function(item, i) {
           return {
