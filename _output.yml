@@ -2,11 +2,11 @@ bookdown::gitbook:
   split_by: chapter
   css: style.css
   includes:
-    #in_header: includes/gitbook/gitbook-plugin-bookdown.html
-    #before_body: includes/gitbook/gitbook-plugin-bookdown.html
-    #after_body: includes/gitbook/gitbook-plugin-bookdown.html
-    #before_chapter: includes/gitbook/plugin-bookdown.html
-    #after_chapter: includes/gitbook/gitbook-plugin-bookdown.html
+    #in_header: includes/gitbook/plugins.html
+    #before_body: includes/gitbook/plugins.html
+    #after_body: includes/gitbook/plugins.html
+    #before_chapter: includes/gitbook/plugins.html
+    #after_chapter: includes/gitbook/plugins.html
   config:
     toc:
       #before: !expr paste0('| 
@@ -20,7 +20,7 @@ bookdown::gitbook:
     #   text: "Ver código"
     download: ["pdf"]
     #download: 
-    #  - ["install-R-RStudio.pdf", "PDF"]
+    #  - ["install-R-RStudio.pdf", "PDF"] # usar 'book_filename' en bookdown.yml 
     sharing: 
       twitter: no
       facebook: no

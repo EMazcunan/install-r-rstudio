@@ -1,4 +1,4 @@
-book_filename: "install-R-RStudio"
+book_filename: "install-R-RStudio" # determina el nombre del PDF (por defecto es _main.pdf y GitHub no lo ve)
 rmd_files: ["index.Rmd", "linux.Rmd", "windows.Rmd", "mac.Rmd"]
 output_dir: docs
 #delete_merged_file: true
