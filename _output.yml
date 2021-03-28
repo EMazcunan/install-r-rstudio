@@ -1,7 +1,7 @@
 bookdown::gitbook:
   split_by: chapter
   css: style.css
-  includes:
+  #includes:
     #in_header: includes/gitbook/plugins.html
     #before_body: includes/gitbook/plugins.html
     #after_body: includes/gitbook/plugins.html
@@ -14,9 +14,18 @@ bookdown::gitbook:
       before: | 
         <li><a href="./"> Instalación de R y RStudio </a></li>
       after: |
-        <li><a href="https://pages.github.com/" target="blank">Publicado con GitHub Pages</a></li>
+        <li>
+            <ul>
+                <li style="margin: 10px 0;"> 
+                    Creado con <a style="display:inline;padding-left:0px;;padding-right:0px;" href="https://bookdown.org/yihui/bookdown/" target="blank">bookdown</a>
+                </li>
+                <li style="margin: 10px 0;"> 
+                    Publicado con <a style="display:inline;padding:0px;" href="https://pages.github.com/bookdown/" target="blank">GitHub Pages</a>
+                </li>
+            </ul>
+        </li>
     #  view: 
-    #   link: "https://github.com/EMazcunan/install-r-rstudio/blob/master/%s"
+    #    link: "https://github.com/EMazcunan/install-r-rstudio/blob/master/%s"
     #   text: "Ver código"
     download: ["pdf"]
     #download: 

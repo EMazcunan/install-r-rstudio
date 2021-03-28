@@ -1,17 +1,25 @@
 # Linux {#linux}
 
-```{r, out.width="15%"}
+
+```r
 knitr::include_graphics("images/os/tux-flat.png")
 ```
+
+
+\includegraphics[width=0.15\linewidth]{images/os/tux-flat} 
 
 ## Instalación de R
 
 En este apartado se describen las instrucciones para instalar R en Ubuntu. Para otras distribuciones de Linux consulta [este link](https://ftp.cixug.es/CRAN/bin/linux/){target="_blank"}.
 
 
-```{r, out.width="15%"}
+
+```r
 knitr::include_graphics("images/os/ubuntu.png")
 ```
+
+
+\includegraphics[width=0.15\linewidth]{images/os/ubuntu} 
 
 Para instalar R en Ubuntu instala los paquetes `r-base`  y  `r-base-dev`, ejecutando desde la terminal
 

@@ -2,7 +2,7 @@
 params: 
     set_title: "Instalación de R y RStudio"
 lang: es
-title: "`r params$set_title`"
+title: "Instalación de R y RStudio"
 subtitle: "Métodos Numéricos y Estadísticos"
 author: "Eva María Mazcuñán Navarro"
 github-repo: "EMazcunan/install-r-rstudio"
@@ -15,24 +15,10 @@ biblio-style: apalike
 link-citations: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-    echo = FALSE, 
-    fig.retina = 2, 
-    fig.align = "center",
-    out.width="100%"
-)
-rmarkdown::find_pandoc()
-```
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
 
-<!-- # `r params$set_title`  {-} -->
+
+<!-- # Instalación de R y RStudio  {-} -->
 
 #  {.unlisted .unnumbered}
 <!-- #  X {.unnumbered} -->
