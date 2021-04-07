@@ -1,55 +1,35 @@
 --- 
-params: 
-    set_title: "Instalación de R y RStudio"
 lang: es
-title: "`r params$set_title`"
-subtitle: "Métodos Numéricos y Estadísticos"
+title: "Instalación de R y RStudio"
+subject: "Métodos Numéricos y Estadísticos"
+degree: "Grado en Ingeniería Informática / Mecánica"
+institution: "Universidad de León"
+term: "2020-2021"
 author: "Eva María Mazcuñán Navarro"
-github-repo: "EMazcunan/install-r-rstudio"
+github-repo: "install-r-rstudio"
 date: ""
-description: "Instalación de R y RStudio"
-site: bookdown::bookdown_site
-documentclass: article
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
 link-citations: yes
+site: bookdown::bookdown_site
 ---
 
-```{r setup, include=FALSE}
+```{r, label = 'setup', include=FALSE}
 knitr::opts_chunk$set(
     echo = FALSE, 
     fig.retina = 2, 
     fig.align = "center",
     out.width="100%"
 )
+# -shell-escape
+# https://stackoverflow.com/questions/55459948/latex-shell-escape-options-in-yaml-header-dont-use?noredirect=1#comment97651281_55459948
+options(tinytex.engine_args = '-synctex=1 -halt-on-error -interaction=nonstopmode -shell-escape') 
+
+# usar versión más reciente de pandoc
 rmarkdown::find_pandoc()
 ```
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
-
-<!-- # `r params$set_title`  {-} -->
 
 #  {.unlisted .unnumbered}
-<!-- #  X {.unnumbered} -->
 
-
-<!-- ```{r htmlTemp3, echo=FALSE, eval=TRUE} -->
-<!-- codejs <- readr::read_lines("js/plugin-bookdown.js") -->
-
-<!-- htmlhead <-  -->
-<!--   paste( -->
-<!-- '<script>', -->
-<!-- paste(codejs, collapse = "\n"), -->
-<!-- '</script> -->
-<!-- ', sep = "\n") -->
-
-<!-- readr::write_lines(htmlhead, path = "in-header.html") -->
-<!-- ```  -->
 
 Utilizaremos el lenguaje **R**, vía la IDE **RStudio**, para resolver las tareas que se plantearán en la asignatura.
 

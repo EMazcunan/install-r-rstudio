@@ -1,9 +1,0 @@
-linux
-instalación-de-r
-instalación-de-rstudio
-windows
-instalación-de-r-1
-instalación-de-rstudio-1
-mac
-instalación-de-r-2
-instalación-de-rstudio-2

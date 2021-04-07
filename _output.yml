@@ -1,45 +1,6 @@
-bookdown::gitbook:
-  split_by: chapter
-  css: style.css
-  #includes:
-    #in_header: includes/gitbook/plugins.html
-    #before_body: includes/gitbook/plugins.html
-    #after_body: includes/gitbook/plugins.html
-    #before_chapter: includes/gitbook/plugins.html
-    #after_chapter: includes/gitbook/plugins.html
-  config:
-    toc:
-      #before: !expr paste0('| 
-      #  <li><a href="./">', rmarkdown::metadata$title, '</a></li>')
-      before: | 
-        <li><a href="./"> Instalación de R y RStudio </a></li>
-      after: |
-        <li>
-            <ul>
-                <li style="margin: 10px 0;"> 
-                    Creado con <a style="display:inline;padding-left:0px;;padding-right:0px;" href="https://bookdown.org/yihui/bookdown/" target="blank">bookdown</a>
-                </li>
-                <li style="margin: 10px 0;"> 
-                    Publicado con <a style="display:inline;padding:0px;" href="https://pages.github.com/bookdown/" target="blank">GitHub Pages</a>
-                </li>
-            </ul>
-        </li>
-    #  view: 
-    #    link: "https://github.com/EMazcunan/install-r-rstudio/blob/master/%s"
-    #   text: "Ver código"
-    download: ["pdf"]
-    #download: 
-    #  - ["install-R-RStudio.pdf", "PDF"] # usar 'book_filename' en bookdown.yml 
-    sharing: 
-      twitter: no
-      facebook: no
-      github: yes
-      all: []
-bookdown::pdf_book:
-  includes:
-    in_header: includes/pdf_book/preamble.tex
-    #before_body: includes/pdf_book/before_body.tex
-    #after_body: includes/pdf_book/after_body.tex
-  latex_engine: pdflatex
-  citation_package: natbib
-  keep_tex: yes
+ebookdown::egitbook: default
+ebookdown::epdf_book:
+  classoption:
+    - title=normal
+    - toc=normal
+    - bib=normal
