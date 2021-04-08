@@ -6,7 +6,7 @@ degree: "Grado en Ingeniería Informática / Mecánica"
 institution: "Universidad de León"
 term: "2020-2021"
 author: "Eva María Mazcuñán Navarro"
-github-repo: "install-r-rstudio"
+github-repo: "EMazcunan/install-r-rstudio"
 date: ""
 link-citations: yes
 site: bookdown::bookdown_site
