@@ -27,9 +27,9 @@ rmarkdown::find_pandoc()
 #  {.unlisted .unnumbered}
 
 
-Utilizaremos el lenguaje `r latex::textsf('R')`, vía la IDE (*Integrated Development Environment*) `r latex::textsf('RStudio')`, para resolver las tareas que se plantearán en la asignatura.
+Utilizaremos el lenguaje `r latex::textsf('R')`, vía la IDE (_Integrated Development Environment_) `r latex::textsf('RStudio')`, para resolver las tareas que se plantearán en la asignatura.
 
-En este documento encontrarás las instrucciones para instalar R y RStudio en tu equipo.
+En este documento encontrarás las instrucciones para instalar `r latex::textsf('R')` y `r latex::textsf('RStudio')` en tu equipo.
 
 Utiliza la tabla de contenidos del panel izquierdo para elegir el sistema operativo donde quieres realizar la instalación, y sigue los pasos que se describen allí.
 
