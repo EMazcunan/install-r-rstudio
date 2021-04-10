@@ -2,6 +2,7 @@
 *.auxlock
 *.log
 *.mw
+*.bbl
 *.synctex.gz
 exsol-output/
 tikz/
