@@ -10,9 +10,13 @@
     border-bottom: 2px solid lightgray;
     padding: 0 0 0.7em 0;
 }
-.title {
-  padding-top: 0.7em;
-  border-top: 2px solid lightgray;
+.title::before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid lightgray;
+  position: relative;
+  margin: 0 0 0.7em 0;
+  padding: 0 0 0.7em 0;
 }
 .author::before {
   content: "Métodos Numéricos y Estadísticos \A Grado en Ingeniería Informática / Mecánica \A Universidad de León \A  \A Curso 2020-2021";

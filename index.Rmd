@@ -1,13 +1,9 @@
 --- 
-lang: es
-title: "Instalación de R y RStudio"
-subject: "Métodos Numéricos y Estadísticos"
-degree: "Grado en Ingeniería Informática / Mecánica"
-institution: "Universidad de León"
+documentclass: "mnye"
+degree: "mecinf"
 term: "2020-2021"
-author: "Eva María Mazcuñán Navarro"
+title: "Instalación de R y RStudio"
 github-repo: "EMazcunan/install-r-rstudio"
-date: ""
 link-citations: yes
 site: bookdown::bookdown_site
 ---
@@ -21,7 +17,7 @@ knitr::opts_chunk$set(
 )
 # -shell-escape
 # https://stackoverflow.com/questions/55459948/latex-shell-escape-options-in-yaml-header-dont-use?noredirect=1#comment97651281_55459948
-options(tinytex.engine_args = '-synctex=1 -halt-on-error -interaction=nonstopmode -shell-escape') 
+options(tinytex.engine_args = '-halt-on-error -interaction=nonstopmode -shell-escape') 
 
 # usar versión más reciente de pandoc
 rmarkdown::find_pandoc()
@@ -31,7 +27,7 @@ rmarkdown::find_pandoc()
 #  {.unlisted .unnumbered}
 
 
-Utilizaremos el lenguaje **R**, vía la IDE **RStudio**, para resolver las tareas que se plantearán en la asignatura.
+Utilizaremos el lenguaje `r latex::textsf('R')`, vía la IDE `r latex::textsf('RStudio')`, para resolver las tareas que se plantearán en la asignatura.
 
 En este documento encontrarás las instrucciones para instalar R y RStudio en tu equipo.
 
