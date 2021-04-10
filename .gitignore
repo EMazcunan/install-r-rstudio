@@ -1,4 +1,8 @@
-.Rproj.user
+*.auxlock
+*.log
+*.mw
+*.synctex.gz
+exsol_output/
+tikz/
+USAGE.txt
 .Rhistory
-.RData
-.Ruserdata

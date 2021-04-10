@@ -1,0 +1,25 @@
+book_filename: "install-R-RStudio.Rmd" # determina el nombre del PDF (por defecto es _main.pdf y GitHub no lo ve)
+rmd_files: ["index.Rmd", "linux.Rmd", "windows.Rmd", "mac.Rmd"]
+output_dir: "docs" # Para GitHub (por defecto es _book)
+delete_merged_file: true
+language:
+    label: 
+        fig: 'Figura '
+        tab: 'Tabla '
+        eq: 'Ecuación '
+        thm: 'Teorema '
+        lem: 'Lema '
+        cor: 'Corolario '
+        prp: 'Proposición '
+        cnj: 'Conjetura '
+        def: 'Definición '
+        exm: 'Ejemplo '
+        exr: 'Ejercicio '
+        hyp: 'Hypótesis '
+        proof: 'Prrueba. '
+        remark: 'Nota. '
+        solution: 'Solución. '
+ui:
+    chapter_name: ''
+    appendix_name: 'Apéndice'    
+#new_session: yes    
