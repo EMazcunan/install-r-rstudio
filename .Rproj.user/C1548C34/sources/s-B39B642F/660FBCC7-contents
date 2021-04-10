@@ -1,6 +1,0 @@
-ebookdown::egitbook: default
-ebookdown::epdf_book:
-  classoption:
-    - title=normal
-    - toc=normal
-    - bib=normal

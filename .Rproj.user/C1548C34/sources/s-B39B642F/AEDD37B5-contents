@@ -1,6 +1,0 @@
-*.auxlock
-*.log
-*.mw
-*.synctex.gz
-USAGE.txt
-.Rhistory

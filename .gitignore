@@ -1,6 +1,11 @@
+#latex
 *.auxlock
 *.log
 *.mw
 *.synctex.gz
+
+# R
 USAGE.txt
 .Rhistory
+.Rproj.user/
+*.Rproj
