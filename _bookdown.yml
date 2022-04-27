@@ -16,7 +16,7 @@ language:
         exm: 'Ejemplo '
         exr: 'Ejercicio '
         hyp: 'Hypótesis '
-        proof: 'Prrueba. '
+        proof: 'Prueba. '
         remark: 'Nota. '
         solution: 'Solución. '
 ui:

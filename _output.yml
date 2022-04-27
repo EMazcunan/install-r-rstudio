@@ -1,6 +1,5 @@
-ebookdown::egitbook: default
-ebookdown::epdf_book:
-  classoption:
-    - title=normal
-    - toc=normal
-    - bib=normal
+ehtml::egitbook:
+  split_by: 'chapter'
+# bookdown::pdf_book:
+# epdf::auto_pdf_book: default
+
