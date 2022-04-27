@@ -15,7 +15,8 @@ knitr::opts_chunk$set(
     echo = FALSE, 
     fig.retina = 2,
     fig.align = "center",
-    out.width="100%"
+    out.width="100%",
+    tidy.opts=list(width.cutoff=80),tidy=TRUE
 )
 # -shell-escape
 # https://stackoverflow.com/questions/55459948/latex-shell-escape-options-in-yaml-header-dont-use?noredirect=1#comment97651281_55459948
@@ -31,7 +32,7 @@ rmarkdown::find_pandoc()
 Utilizaremos el lenguaje `r latex::textsf('R')`, vía `r latex::textsf('RStudio')`, para realizar las prácticas y resolver las tareas que se plantearán en la asignatura.
 
 
-```{r, fig.show="hold", out.width=c("14%", "10%" , "30%"),  fig.cap = ' '}
+```{r, fig.show="hold", out.width=c("14%", "10%" , "30%"),  fig.cap ={if(knitr::is_html_output()){' '}else{}}}
 knitr::include_graphics(c("images/r-logo.png", "images/sep.png", "images/rstudio-logo.png"))
 ```
 
