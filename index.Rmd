@@ -1,6 +1,6 @@
 ---
 documentclass: "mnye"
-degree: "mecinf"
+degree: "Grado en Ingeniería Mecánica/Informática"
 term: "2021-2022"
 author: "Eva María Mazcuñán Navarro"
 title: "Instalación de R y RStudio"
