@@ -1,6 +1,7 @@
+# ehtml::egitbook: default
 ehtml::egitbook:
-  split_by: 'chapter'
-# bookdown::pdf_book:
-epdf::auto_pdf_book: 
-    pandoc_args: --listings
+  split_by: "chapter"
+epdf::auto_pdf_book: default
+# epdf::auto_pdf_book: 
+#     pandoc_args: --listings
 

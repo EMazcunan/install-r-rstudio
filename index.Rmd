@@ -16,7 +16,9 @@ knitr::opts_chunk$set(
     fig.retina = 2,
     fig.align = "center",
     out.width="100%",
-    tidy.opts=list(width.cutoff=80),tidy=TRUE
+    # Truncar líneas en PDF
+    tidy = "styler"
+    # tidy.opts=list(width.cutoff=80),tidy=TRUE
 )
 # -shell-escape
 # https://stackoverflow.com/questions/55459948/latex-shell-escape-options-in-yaml-header-dont-use?noredirect=1#comment97651281_55459948

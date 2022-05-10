@@ -48,10 +48,46 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{listings}
-\newcommand{\passthrough}[1]{#1}
-\lstset{defaultdialect=[5.3]Lua}
-\lstset{defaultdialect=[x86masm]Assembler}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -87,9 +123,26 @@
 % Preamble
 
 
-\lstset{
-  breaklines=true
+\usepackage{ebox}
+\usepackage{enotation}
+\usepackage{fontawesome}
+
+% https://stackoverflow.com/questions/63222203/rmarkdown-wrap-code-in-chunks-but-keep-breaks-after-pipe
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+    breaksymbolleft={},
+    showspaces = false,
+    showtabs = false,
+    breaklines,
+    commandchars=\\\{\}
 }
+
+% 
+% \lstset{
+%   breaklines=true
+% }
+
+\pgfplotsset{compat=1.18}
 \degree{Grado en Ingeniería Mecánica/Informática}
 \term{2021-2022}
 \ifLuaTeX
@@ -137,43 +190,55 @@ En este apartado se describen las instrucciones para instalar R en Ubuntu. Para 
 
 \begin{center}\includegraphics[width=0.15\linewidth]{images/os/ubuntu} \end{center}
 
-Para instalar R en Ubuntu necesitamos instalar los paquetes \passthrough{\lstinline!r-base!} y \passthrough{\lstinline!r-base-dev!}. Siguiendo los siguientes pasos obtendrás las versiones más recientes y recibirás las últimas actualizaciones.
+Para instalar R en Ubuntu necesitamos instalar los paquetes \texttt{r-base} y \texttt{r-base-dev}. Siguiendo los siguientes pasos obtendrás las versiones más recientes y recibirás las últimas actualizaciones.
 
 \textbf{PASO 1: } Actualizar los índices:
 
-\begin{lstlisting}[language=bash]
-sudo apt update 
-\end{lstlisting}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sudo}\NormalTok{ apt update }
+\end{Highlighting}
+\end{Shaded}
 
 \textbf{PASO 2: } Instalar un par de paquetes auxiliares:
 
-\begin{lstlisting}[language=bash]
-sudo apt install --no-install-recommends software-properties-common dirmngr 
-\end{lstlisting}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sudo}\NormalTok{ apt install }\AttributeTok{{-}{-}no{-}install{-}recommends}\NormalTok{ software{-}properties{-}common dirmngr }
+\end{Highlighting}
+\end{Shaded}
 
 \textbf{PASO 3: } Añadir la clave para el repositorio que añadiremos en el siguiente paso (por Michael Rutter):
 
-\begin{lstlisting}[language=bash]
-wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-\end{lstlisting}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{wget} \AttributeTok{{-}qO{-}}\NormalTok{ https://cloud.r{-}project.org/bin/linux/ubuntu/marutter\_pubkey.asc }\KeywordTok{|} \FunctionTok{sudo}\NormalTok{ tee }\AttributeTok{{-}a}\NormalTok{ /etc/apt/trusted.gpg.d/cran\_ubuntu\_key.asc}
+\end{Highlighting}
+\end{Shaded}
 
 \textbf{PASO 4: } Añadir repositorio (de \href{https://cran.r-project.org/}{CRAN}):
 
-\begin{lstlisting}[language=bash]
-sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-\end{lstlisting}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sudo}\NormalTok{ add{-}apt{-}repository }\StringTok{"deb https://cloud.r{-}project.org/bin/linux/ubuntu }\VariableTok{$(}\ExtensionTok{lsb\_release} \AttributeTok{{-}cs}\VariableTok{)}\StringTok{{-}cran40/"}
+\end{Highlighting}
+\end{Shaded}
 
 \textbf{PASO 5: } Volver a actualizar los índices:
 
-\begin{lstlisting}[language=bash]
-sudo apt update 
-\end{lstlisting}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sudo}\NormalTok{ apt update }
+\end{Highlighting}
+\end{Shaded}
 
-\textbf{PASO 6: } Instalar \passthrough{\lstinline!r-base!} y \passthrough{\lstinline!r-base-dev!}:
+\textbf{PASO 6: } Instalar \texttt{r-base} y \texttt{r-base-dev}:
 
-\begin{lstlisting}[language=bash]
-sudo apt install --no-install-recommends r-base r-base-dev 
-\end{lstlisting}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sudo}\NormalTok{ apt install }\AttributeTok{{-}{-}no{-}install{-}recommends}\NormalTok{ r{-}base r{-}base{-}dev }
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{instalaciuxf3n-de-rstudio}{%
 \subsection{Instalación de RStudio}\label{instalaciuxf3n-de-rstudio}}
@@ -195,7 +260,7 @@ En el apartado \textbf{All Installers} descarga el instalador más reciente para
 \end{figure}
 
 \textbf{PASO 2: }
-Cuando se complete la descarga del paso anterior, haz doble click en el archivo \passthrough{\lstinline!.deb!} descargado. Se abrirá con el gestor de software de Ubuntu. Presiona el botón `Instalar' para terminar.
+Cuando se complete la descarga del paso anterior, haz doble click en el archivo \texttt{.deb} descargado. Se abrirá con el gestor de software de Ubuntu. Presiona el botón `Instalar' para terminar.
 
 \hypertarget{windows}{%
 \section{Windows}\label{windows}}
@@ -253,7 +318,7 @@ Accede a la página de descargas de \textsf{R} para Mac OS X pinchando \href{htt
 \caption{Página de descargas de R para Mac}\label{fig:unnamed-chunk-15}
 \end{figure}
 
-Solo tienes que ejecutar el archivo \passthrough{\lstinline!pgk!} que se descargará para instalar R en tu equipo. Puedes conservar todas las opciones de instalación por defecto.
+Solo tienes que ejecutar el archivo \texttt{pgk} que se descargará para instalar R en tu equipo. Puedes conservar todas las opciones de instalación por defecto.
 
 \hypertarget{instalaciuxf3n-de-rstudio-2}{%
 \subsection{Instalación de RStudio}\label{instalaciuxf3n-de-rstudio-2}}
@@ -269,7 +334,7 @@ Accede a la página de descargas de RStudio pinchando \href{https://rstudio.com/
 \caption{Página de descargas de RStudio}\label{fig:unnamed-chunk-16}
 \end{figure}
 
-Se descargará un archivo \passthrough{\lstinline!dmg!}. Para completar la instalación de RStudio en tu equipo solo tienes que arrastar el icono de la aplicación a tu carpeta Aplicaciones.
+Se descargará un archivo \texttt{dmg}. Para completar la instalación de RStudio en tu equipo solo tienes que arrastar el icono de la aplicación a tu carpeta Aplicaciones.
 
 \printbibliography
 
